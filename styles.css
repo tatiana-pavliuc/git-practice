@@ -3,31 +3,22 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
 }
 
 header {
-    position: absolute; /* Меняем на absolute, чтобы наложить на фон */
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10; /* Обеспечивает, что меню выше фона */
-}
-
-.logo {
-    width: 100px; /* Измени размер по необходимости */
+    background: #ffcc00;
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
 }
 
 nav ul li {
-    position: relative;
+    display: inline;
     margin: 0 15px;
 }
 
@@ -36,38 +27,12 @@ nav ul li a {
     color: #333;
 }
 
-nav ul li .dropdown {
-    display: none;
-    position: absolute;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-nav ul li:hover .dropdown {
-    display: block;
-}
-
-.dropdown li {
-    margin: 0;
-}
-
-.hero {
-    background-image: url('URL_ФОНА');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Занимает всю высоту экрана */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
 section {
     padding: 20px;
     margin: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон для контента */
-    border-radius: 5px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -75,7 +40,7 @@ footer {
     padding: 10px;
     background: #333;
     color: #fff;
-    position: relative;
-    bottom: 0;
+    position: fixed;
     width: 100%;
+    bottom: 0;
 }
