@@ -1,46 +1,103 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* Белый фон для всего тела */
 }
 
 header {
-    background: #ffcc00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-    text-align: center;
+    position: fixed; /* Фиксированное положение */
+    top: 0;
+    left: 0;
+    right: 10px;
+    z-index: 10;
+    background-color: transparent; /* Изначально прозрачный фон */
+    transition: background-color 0.5s ease; /* Плавный переход */
+}
+
+header.scrolled {
+    background-color: white; /* Фон белый при прокрутке */
+}
+
+header.scrolled nav ul li a {
+    color: #8a0f46; /* Цвет текста при прокрутке */
+}
+
+.logo {
+    height: 50px; /* Размер логотипа */
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: rgb(255, 255, 255); /* Цвет текста по умолчанию */
+    font-weight: bold;
+    font-family: 'Solway', sans-serif; /* Применение шрифта Solway */
 }
 
+main {
+    text-align: center;
+}
+
+/* Убираем отступы для первой секции */
+#home {
+    height: 100vh; /* Высота на весь экран минус высота заголовка */
+    width: 100%; /* Ширина на весь экран */
+    background: url('images/principaltext.png') no-repeat center center; 
+    background-size: cover; /* Масштабирование изображения */
+    position: relative; /* Относительное позиционирование для внутреннего контента */
+}
+
+/* Добавляем стили для блока с текстом */
+.quote {
+    background-color: rgba(255, 255, 255, 0.271); /* Полупрозрачный белый фон */
+    border-radius: 20px; /* Округленные края */
+    padding: 10px; /* Отступы внутри блока */
+    width: 65%; /* Ширина блока */
+    max-width: 500px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрирование блока */
+    position: absolute; /* Абсолютное позиционирование для текста */
+    top: 70%; /* Расположение чуть ниже середины */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Сдвигаем на половину ширины и высоты */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.quote p {
+    font-size: 1.5em; /* Размер шрифта */
+    color: #ffffff; /* Цвет текста */
+    font-family: 'Forum', cursive;
+}
+
+/* Убираем отступы в секции */
 section {
-    padding: 20px;
-    margin: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Убираем отступы */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    position: fixed;
+    position: relative;
+    bottom: 10px;
     width: 100%;
-    bottom: 0;
 }

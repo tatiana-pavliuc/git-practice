@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кондитерская</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SouffleT</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    </head>
 <body>
     <header>
-        <h1>Кондитерская "Сладкий мир"</h1>
+        <a href="#home">
+            <img src="images/logo.png" class="logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="#about">О нас</a></li>
+                <li><a href="#proud">Мы гордимся</a></li>
                 <li><a href="#menu">Меню</a></li>
+                <li><a href="#photozone">Фотозона</a></li>
                 <li><a href="#contact">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>О нас</h2>
-        <p>Мы - кондитерская, которая предлагает широкий выбор сладостей, выпечки и десертов.</p>
-    </section>
+    <main>
+     
+        <section id="home">
+            <div class="quote">
+                <p>"Совершенство вкуса, искусство любви"</p>
+            </div>
+        </section>
 
-    <section id="menu">
-        <h2>Меню</h2>
-        <ul>
-            <li>Торты</li>
-            <li>Кексы</li>
-            <li>Пирожные</li>
-            <li>Печенье</li>
-        </ul>
-    </section>
+       
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Мы - кондитерская "SouffleT", предлагающая широкий выбор десертов.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Контакты</h2>
-        <p>Email: contact@sweetsworld.com</p>
-        <p>Телефон: +7 (123) 456-78-90</p>
-    </section>
+        
+        <section id="proud">
+            <h2>Мы гордимся</h2>
+            <p>Наши достижения и награды.</p>
+        </section>
+
+      
+        <section id="menu">
+            <h2>Меню</h2>
+            <ul>
+                <li>Торты</li>
+                <li>Хлебобулочные изделия</li>
+                <li>Напитки</li>
+            </ul>
+        </section>
+
+        
+        <section id="photozone">
+            <h2>Фотозона</h2>
+            <p>Здесь вы можете делать красивые фотографии!</p>
+        </section>
+
+        
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Email: contact@soufflet.com</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Кондитерская "Сладкий мир". Все права защищены.</p>
+        <p>&copy; 2024 SouffleT. Все права защищены.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
-</html>
+</html> 
