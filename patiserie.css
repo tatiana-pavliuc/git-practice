@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+header.scrolled {
+    background-color: white;
+    box-shadow: 0 4px 8px #8a0f4649;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8a0f46;
+    font-weight: bold;
+    font-family: 'Solway', sans-serif;
+}
+
+main {
+    text-align: center;
+    position: relative;
+}
+
+.h2format {
+    font-size: 4.5em;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    color: #8a0f46;
+}
+
+.torts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin: 20px; /* Уменьшены отступы от краёв страницы */
+}
+
+.torts-item {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #8a8a8a;
+    width: 525px;
+    margin: -20px 0px; /* Уменьшены отступы между рядами */
+}
+
+.torts-image {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-torts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-torts div {
+    margin: 4px 0;
+    font-family: 'Alice', sans-serif;
+    font-size: 1em;
+    color: #000000;
+}
+
+.text-torts div:first-child {
+    font-style: italic; /* Курсив для первой строки */
+    font-family: 'Alice', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 20px; /* Отступ сверху для последней строки */
+}
+
+.text-torts div:last-child {
+    margin-top: 20px; /* Отступ сверху для последней строки */
+    font-style: italic; /* Курсив для первой строки */
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+    bottom: 10px;
+    width: 100%;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торты - SouffleT</title>
+    <link rel="stylesheet" href="patiserie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="#home">
+            <img src="images/logo.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#proud">Мы гордимся</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#photozone">Фотозона</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="torts">
+            <div class="h2format"><p>Торты & Пирожные</p></div>
+            <div class="torts-container">
+                <div class="torts-item">
+                    <img src="images/tort1.jpg" class="torts-image">
+                    <div class="text-torts">
+                        <div><strong>Суфле</strong></div>
+                        <div>50% легкости</div>
+                        <div>30% сладкого вдохновения</div>
+                        <div>15% волшебного крема</div>
+                        <div>5% капелька безумия</div>
+                        <div>210 MDL / 15 MLD</div>
+                    </div>
+                </div>
+
+                <div class="torts-item">
+                    <img src="images/tort21.png" class="torts-image">
+                    <div class="text-torts">
+                        <div><strong>Снежная ночь</strong></div>
+                        <div>40% сказок</div>
+                        <div>30% ароматного чая</div>
+                        <div>20% уютных разговоров</div>
+                        <div>10% звездного света</div>
+                        <div>260 MDL / 16 MLD</div>
+                    </div>
+                </div>
+
+                <div class="torts-item">
+                    <img src="images/tort3.png" class="torts-image">
+                    <div class="text-torts">
+                        <div><strong>Шоколадная мечта</strong></div>
+                        <div>80% шоколадной любви</div>
+                        <div>10% щепотка магии</div>
+                        <div>10% нежности</div>
+                        <div>5% настроения</div>
+                        <div>300 MDL / 18 MLD</div>
+                    </div>
+                </div>
+
+                <div class="torts-item">
+                    <img src="images/tort4.png" class="torts-image">
+                    <div class="text-torts">
+                        <div><strong>Красный бархат</strong></div>
+                        <div>40% волшебной пудры</div>
+                        <div>30% сладких грез</div>
+                        <div>20% шоколадных мечтаний</div>
+                        <div>10% лунного света</div>
+                        <div>250 MDL / 16 MLD</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SouffleT. Все права защищены.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
