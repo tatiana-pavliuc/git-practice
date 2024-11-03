@@ -172,7 +172,7 @@ footer {
 #cake {
     position: absolute;
     bottom: 0; /* Позиционируем торт снизу */
-    left:23%;
+    left:250px;
     transform: translateX(-50%); /* Сдвиг для центрирования */
     z-index: 1;
 }
