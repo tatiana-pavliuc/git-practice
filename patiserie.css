@@ -49,6 +49,11 @@ nav ul li a {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    min-height: 100vh; /* Минимальная высота 100% от высоты окна */
     text-align: center;
     position: relative;
     justify-content: center; /* Горизонтальное центрирование */
@@ -67,10 +72,21 @@ main {
 
 .torts-container {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(2, 1fr); /* Два столбца */
     justify-content: center;
+=======
+    grid-template-columns: repeat(2, 1fr); /* Две колонки одинаковой ширины */
+    align-content: center;
+>>>>>>> a9b754df4040c7ccf9a2edbf26eb3f5e63dd3f7a
     gap: 70px;
     margin: 20px; /* Уменьшены отступы от краёв страницы */
+}
+
+@media (max-width: 768px) {
+    .torts-container {
+        grid-template-columns: 1fr; /* Одна колонка на меньших экранах */
+    }
 }
 
 .torts-item {
