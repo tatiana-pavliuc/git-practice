@@ -51,6 +51,9 @@ nav ul li a {
 main {
     text-align: center;
     position: relative;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    display: flex; /* Используем Flexbox для центрирования */
 }
 
 .h2format {
@@ -63,8 +66,8 @@ main {
 }
 
 .torts-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца */
     justify-content: center;
     gap: 70px;
     margin: 20px; /* Уменьшены отступы от краёв страницы */
